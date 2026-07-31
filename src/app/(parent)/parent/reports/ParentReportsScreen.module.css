@@ -1,0 +1,203 @@
+.page {
+    animation: screen-enter 360ms cubic-bezier(.22, 1, .36, 1) both;
+    max-width: 720px;
+  }
+  
+  .heading {
+    margin-bottom: 24px;
+  }
+  
+  .heading > div > span {
+    color: #0066cc;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .12em;
+  }
+  
+  .heading h1 {
+    margin: 8px 0 8px;
+    font-family: "SF Pro Display", system-ui, sans-serif;
+    font-size: clamp(31px, 5vw, 42px);
+    line-height: 1.08;
+    letter-spacing: -.045em;
+  }
+  
+  .heading p {
+    margin: 0;
+    color: #6e6e73;
+    font-size: 15px;
+  }
+  
+  .childTabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  
+  .childTabs button {
+    min-height: 36px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 999px;
+    background: #e8e8ed;
+    color: #1d1d1f;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  
+  .activeTab {
+    background: #0071e3 !important;
+    color: #fff !important;
+  }
+  
+  .content {
+    display: grid;
+    gap: 14px;
+  }
+  
+  .hero,
+  .panel,
+  .emptyPanel {
+    border: 1px solid rgb(0 0 0 / 7%);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 9px 30px rgb(0 0 0 / 5%);
+  }
+  
+  .hero {
+    padding: 24px;
+    background:
+      linear-gradient(180deg, #f5f9ff 0%, #fff 55%);
+  }
+  
+  .hero h2 {
+    margin: 14px 0 10px;
+    font-size: 24px;
+    letter-spacing: -.03em;
+  }
+  
+  .hero > p {
+    margin: 0;
+    color: #515154;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  
+  .heroMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    color: #86868b;
+    font-size: 13px;
+  }
+  
+  .panel {
+    padding: 20px 22px;
+  }
+  
+  .panel h3,
+  .panelHead h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  
+  .panel > p {
+    margin: 0;
+    color: #515154;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  
+  .panelHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .panelHead h3 {
+    margin: 0;
+  }
+  
+  .keywordList,
+  .reportList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .keywordList li {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #f5f5f7;
+    font-size: 13px;
+  }
+  
+  .reportList li + li {
+    margin-top: 8px;
+  }
+  
+  .reportList button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 0;
+    border-radius: 14px;
+    background: #f5f5f7;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .reportList strong {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .reportList small {
+    color: #86868b;
+    font-size: 12px;
+  }
+  
+  .reportList button > span:last-child {
+    color: #0066cc;
+    font-size: 13px;
+    font-weight: 650;
+  }
+  
+  .empty,
+  .emptyPanel p {
+    margin: 0;
+    color: #6e6e73;
+    font-size: 14px;
+  }
+  
+  .emptyPanel {
+    padding: 48px 24px;
+    text-align: center;
+  }
+  
+  .emptyPanel h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+  }
+  
+  @keyframes screen-enter {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

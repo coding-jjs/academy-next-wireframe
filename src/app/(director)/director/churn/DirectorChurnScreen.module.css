@@ -1,0 +1,41 @@
+.thresholdBtn,
+.actionBtn {
+    min-height: 42px;
+    padding: 0 17px;
+    border: 0;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.thresholdBtn {
+    color: #1d1d1f;
+    background: #e8e8ed;
+}
+
+.thresholdBtn:disabled,
+.actionBtn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.actionBtn {
+    color: #fff;
+    background: #0071e3;
+}
+
+.thresholdBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #6e6e73;
+    font-size: 13px;
+}
+
+.metrics article > span {
+    color: #86868b;
+    font-size: 12px;
+    font-weight: 650;
+}
